@@ -1,0 +1,347 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: azure;
+    /*background: linear-gradient(to bottom,azure,aquamarine,aquamarine)*/
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar {
+z-index:997;
+position:fixed;
+background-color:black;
+opacity:0.9;
+
+height:100px;
+}
+.navbar-brand {
+    height:100% ;
+}
+.heading1{
+    text-align:center;
+    color:green;
+}
+
+.tile {
+background-color:aliceblue;
+width:500px;
+height:350px;
+padding:10px;
+}
+.serbox {
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.serbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.serbox >img{
+    width:auto;
+    height:200px;
+}
+.btn{
+    background-color:lawngreen!important;
+color:white!important;
+}
+p{
+    text-align:justify;
+    font-size:larger;
+    color:black;
+}
+.navbar-inverse .navbar-nav > li > a {
+    font-size: 18px;
+    height: 100px;
+    padding-top:50px;
+}
+.container{
+    padding:0px !important;
+    width:100% !important;
+    margin:0px !important;
+}
+.banner {
+    /* Hide initially */
+    margin-top: 50px !important;
+    margin-bottom: 20px;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    height: 550px !important;
+    background-image: linear-gradient(to right,skyblue,aquamarine,aquamarine,white,White, White) ;
+    /*background-color: !important;*/
+    /*border-radius: 20px;*/
+    
+    padding: 20px;
+    font-size: 24px;
+}
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    height: 600px; /* Adjust the height as needed */
+}
+
+.banner-item {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+    .banner-item.active {
+        display: block;
+        opacity: 1;
+        transition: opacity 0.10s ease-out;
+    }
+
+.banner-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    
+}
+
+/*#banner1 {
+    
+    background-image: url('../Images/technology_4_8.jpg');
+    background-size: cover;
+}*/
+.jumbotron {
+    background-color: transparent;
+   
+   
+}
+.bgdiv {
+    /*background-image: url('../Images/digital-marketing-for-retail-1200x565.jpg');*/
+    /*background-image: url('../Images/bg3.jpg');*/
+    /*background-image: url('../Images/impace.jpg');*/
+    /*background-image: url('../Images/tech_banner.jpg');*/
+    /*background-image: url('../Images/technology_4_8.jpg');*/
+    background-image: url('../Images/background4.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: green;
+}
+.serv{
+    border-top:2px solid white;
+    background-color:aliceblue;
+    
+}
+.btn{
+    background-color:lawngreen;
+}
+.box {
+    /*width:100%;
+    padding:5px;
+    text-align:center;
+    height:550px;
+    margin-left:20px;
+    margin-right:20px;
+ 
+ 
+ background-color:white;*/
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+    .box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+.box>p{
+    font-size:large;
+}
+.box>img{
+    width:50%;
+    height:auto;
+}
+.box>h2{
+   
+   
+    color:green;
+}
+.anim {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.in-viewport {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-right .anim {
+    transform: translateX(-20px);
+}
+
+.fade-left .anim {
+    transform: translateX(20px);
+}
+
+.zoom-in .anim {
+    transform: scale(0.8);
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 0;
+}
+ .footh5 {
+    border-bottom: 1px solid white!important;
+    color: royalblue!important;
+}
+
+.footer-logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.footer-social-icons {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 767px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .banner {
+        height: 400px !important;
+        background-image: linear-gradient(to bottom,skyblue,lightskyblue,white,white,white,white);
+    }
+
+    .body-content {
+        padding: 0;
+    }
+
+
+    .banner-container {
+        height: 1200px;
+    }
+   
+    .banner> p{
+        font-size:x-small!important;
+    }
+    .jumbotron.banner {
+        margin-top: 20px !important;
+        height: auto;
+        margin-bottom:10px;
+    }
+
+    .banner-buttons {
+        bottom: 10px;
+    }
+
+    .anim,
+    .box {
+        width: 100%; /* Make elements full width for mobile */
+        text-align: center;
+    }
+
+        .box > img {
+            width: 80%; /* Adjust image width for mobile */
+        }
+
+    .banner-item {
+        height: 400px; /* Adjust height for mobile */
+        display: block !important; /* Ensure the banner item is visible on mobile */
+    }
+    .banner-item {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+        .banner-item.active {
+            display: block;
+            opacity: 1;
+            transition: opacity 0.10s ease-out;
+        }
+    .box,
+    .serbox {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+   
+
+    footer {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-logo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .footh5 {
+        border-bottom: 1px solid white !important;
+        color: royalblue !important;
+        font-size: 16px;
+    }
+
+    .footer-links,
+    .footer-social-icons {
+        text-align: center;
+    }
+
+        .footer-links li,
+        .footer-social-icons li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+        }
+
+    .list-inline .fab {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
