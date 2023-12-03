@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+   
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <script src="Scripts/ani.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+ <link href="Content/site.css" rel="stylesheet" />
+    <link href="Scripts/fontawesome-free/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+            
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                
+               
+                <asp:ScriptReference Name="WebFormsBundle" />
+
+                <%--Site Scripts--%>
+             
+               
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                     <div style="height:1px;margin-top:5px;"><div style="width:400px;height:100%;float:right;text-align:right;padding-right:10px;;color:white;"> <i class="fas fa-phone" style="color: green;"></i>+012323232323</div> </div>
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">
+                        <img src="Images/Logo.png" style="width:200px;" /></a>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                     <div style="float:left;">
+                    <ul class="nav navbar-nav">
+                       
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        
+                       
+                    </ul>
+                         </div>
+                     <div style="float:right">
+                           <ul class="nav navbar-nav">
+                                <li><a runat="server" href="~/" >Register</a></li>
+                         <li><a runat="server" href="~/" >Log IN</a></li>
+                    </ul>
+                               </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container body-content">
+
+    <div class="banner-container">
+    <div id="banner2" class="jumbotron banner banner-item"  >
+        <div class="row">
+            <div class="col-md-8">
+                 <h2 style="color:green" >
+                     <i class="fas fa-rocket" style="color: green;"></i>
+            Supercharge
+            Your
+            Lead 
+            Capture 
+            
+            
+        </h2>
+                <ul>
+                    <li><p>Unlimited Whisp Links and QR Codes</p></li>
+                    <li><p>Starting at only $9.99 per month</p></li>
+                    <li><p>Full Analytics</p></li>
+                    <li><p>Email/General Chat Support</p></li>
+                    <li><p>No Commitment</p></li>
+                    <li><p>TCPA Compliant</p></li>
+
+                </ul><br />
+                <a href="#" class="btn btn-primary btn-lg">Try Whisp Now &raquo;</a>
+            </div>
+           <div class="col-md-4">
+                <h2>Scan to get started</h2>
+                 <img class="" src="Images/qr.png" style="width:80%;height:80%;" />
+       
+            </div>
+        </div>
+        </div>
+          <div id="banner" class="jumbotron banner banner-item active"  >
+        <div class="row">
+            <div class="col-md-7">
+                <img src="Images/Logo.png" style="width:70%;height:150px;" />
+        <h2 style="color:green">Connect With Customers Instantly</h2>
+        <p class="lead">Whisp is your connector for faster lead conversion.
+            Say goodbye to missed opportunities and hello to better lead routing. With Whisp's powerful contact capture system, customers scan, click, or tap, and their contact information is instantly routed to you, enabling you to initiate a two-way conversation without needing lead forms..</p>
+        <p><a href="#" class="btn btn-primary btn-lg">Try Whisp Now &raquo;</a></p>
+              
+            </div>
+             <div class="col-md-5">
+                 <img class="" src="Images/price.jpg" style="width:80%;height:80%;" />
+      
+            </div>
+            
+        </div>
+       <%-- <h1 style="width:500px;float:left;text-align:center;" >
+            Supercharge
+            Your
+            Lead 
+            Capture
+            <br />
+            <a href="#" class="btn btn-primary btn-lg">Try Whisp Now &raquo;</a>
+        </h1>--%>
+        <%-- <div style="width:350px;height:400px;float:left;" >
+             <img src="Images/Price.jpg"style="width:100%;height:100%;"  />
+         </div>--%>
+    <%--    <div style="width:450px;height:490px;float:right;">
+             <img class="" src="Images/price.jpg" style="width:70%;height:80%;" />
+        <h2>Scan to get started</h2>
+             
+       
+        </div>--%>
+       
+       
+    </div>
+         <div class="banner-buttons">
+        <button class="btn btn-primary" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+        <button class="btn btn-primary" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+        </div>
+  <%--  <div id="banner1" class="jumbotron banner"  >
+        <img src="Images/Logo.png" style="width:70%;height:200px;" />
+        <h1>Connect With Customers Instantly</h1>
+        <p class="lead">Whisp is your connector for faster lead conversion.
+            Say goodbye to missed opportunities and hello to better lead routing. With Whisp's powerful contact capture system, customers scan, click, or tap, and their contact information is instantly routed to you, enabling you to initiate a two-way conversation without needing lead forms..</p>
+        <p><a href="#" class="btn btn-primary btn-lg">Try Whisp Now &raquo;</a></p>
+    </div>--%>
+    <br />
+    <br />
+   <div class="row" style="margin-top:10px;">
+      
+         <div class="col-md-4">
+                 <img class="anim fade-right" src="Images/how.jpg" style="width:100%;" />
+       
+            </div>
+            <div class="col-md-8 anim" style="text-align:justify;" >
+                 <h1>How Whisp Help your Business</h1>
+                 <h3  >
+                     <img src="Images/close.svg" style="width:30px;height:30px"  /> Ditch traditional lead forms and direct messages while reducing drop-offs.
+            
+        </h3> <h3  >
+                     <img src="Images/contact.svg" style="width:30px;height:30px" />Receive your prospect’s contact immediately while being 100% TCPA Compliant
+            
+        </h3> <h3 >
+                     <img src="Images/sms.svg" style="width:30px;height:30px" /> Build stronger connections with an immediate conversation via a 2-way SMS conversation.
+
+        </h3> <h3 >
+                     <img src="Images/person.svg" style="width:30px;height:30px"  /> Streamline your marketing efforts with less spend on converting.
+
+        </h3> <h3  >
+                     <img src="Images/gift.svg" style="width:30px;height:30px"  /> Focus on what you do best, not lead generation.
+
+        </h3>
+                <a href="#" class="btn btn-primary btn-lg">Try Whisp Now &raquo;</a>
+            </div>
+          
+        </div>
+    <div class="row bgdiv" style="text-align: center;">
+       
+      <h2 style="">3 Ways to Capture Leads</h2>
+       
+        <div class="col-md-4">
+            <div class="box "  >
+            <h2>QR Codes</h2>
+            <p class="anim">
+               Scan the Whisp QR code and bypass the lead form, diving directly into a two-way SMS conversation for immediate outreach. 
+                The outcome? Instant lead capture, providing the phone number of the scanner and generating leads instantly.
+                Cross-promote channels, enhance your engagement, and access analytics from the actual world. with data access.
+            </p>
+             <img class="anim" src="Images/qrcode.jpg"  />
+           
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+            <h2>Social Links</h2>
+            <p class="anim">
+               Expand your fan base and create a thriving community on your own terms.
+                Effortlessly connect with your social media followers through SMS conversations by
+                adding Whisp to your bio, content, and Linktree to smoothly transition to SMS. 
+                Send personalized two-way SMS messages, product recommendations, and promotions, 
+                all without the need for lead forms or DMs.
+            </p>
+            <img class="" src="Images/social-links.jpg"  />
+           
+                </div>
+        </div>
+        <div class="col-md-4">
+             <div class="box">
+            <h2>Digital Links</h2>
+            <p class="anim">
+By simply including a link to your landing page, website, videos, or webinars, our lead capture technology will be activated.
+                When customers click on the button, an SMS message will be sent to their phone,
+                enabling them to opt-in and send the message without the need to fill out any lead forms. 
+                This allows you to follow up immediately and grow your lead list.            </p>
+            <img class="" src="Images/Digital-links.jpg"  />
+           
+                 </div>
+        </div>
+        
+        <br />
+        <br /><br />
+     
+    </div>
+      <div class="row bgdiv" style="text-align:center;"> <a href="#" class="btn btn-primary btn-lg">Explore the tools Now &raquo;</a></div>
+    <br />
+    <br />
+    
+     <div class="row">
+         
+        <!-- YouTube Video Thumbnail Section -->
+       
+        <!-- Text Points Section -->
+        <div class="col-md-6">
+            <div class="tile">
+                 <h1>Lead-Capturing Tools</h1>
+            <h3>Integrate Whisp's contact capture tools across your digital and physical presence,
+                such as websites, social media, commercials, and flyers,
+                to instantly capture leads in real-time while ensuring 
+                100% TCPA Compliance with opt-in features.</h3>
+                   <a href="#" class="btn btn-primary btn-lg">Explore the tools Now &raquo;</a>
+            </div>
+           
+        </div>
+          <div class="col-md-6">
+            <video width="500" height="360" controls>
+    <source src="https://content.apisystem.tech/hls/medias/Xped5c2jrqgZhhg67y1J/media/transcoded_videos/646f51a76686bc02382e0a81_,53,32,16,00k.mp4" type="video/mp4">
+   
+</video>
+<%--           <video id="video-84-GGZ-KnJ-video-js" playsinline class="vjs-big-play-centered video-js vjs-default-skin"><source src="https://content.apisystem.tech/hls/medias/Xped5c2jrqgZhhg67y1J/media/transcoded_videos/646f51a76686bc02382e0a81_,53,32,16,00k.mp4.urlset/master.m3u8" type="application/x-mpegURL"></video>--%>
+        </div>
+
+    </div>
+    <div class="serv">
+      <div class="row  "  >
+          <h1 class="heading1" >Use Case For Every Bussiness </h1>
+        
+        <div class="col-md-4" >
+            <div class="serbox anim">
+             <img src="Images/contentc.jpg" />
+          
+            <h2>Content Creators</h2>
+            <p>
+               Add Whisp to your bio, content, or Linktr.ee to directly manage your community off social. </p>
+            <p>
+                <a class="btn btn-default" href="#">Learn more &raquo;</a>
+            </p>
+                </div>
+        </div>
+        <div class="col-md-4">
+             <div class="serbox anim">
+            <img src="Images/smallb.jpg" style="width:80%;height:200px;"  />
+            <h2>Small Scale Business</h2>
+            <p>
+               For businesses, use Whisp QR codes on your marketing materials, websites and commercials to drive leads in the wild.  </p>
+            <p>
+                <a class="btn btn-default" href="#">Learn more &raquo;</a>
+            </p>
+                 </div>
+        </div>
+        <div class="col-md-4">
+             <div class="serbox anim">
+
+            <img src="Images/services.jpg" />
+            <h2>The Service Industry</h2>
+            <p>
+For the service industry, add Whisp on your menu, flyers, and website to create loyalty programs.
+
+            </p>
+            <p>
+                <a class="btn btn-default" href="#">Learn more &raquo;</a>
+            </p>
+                 </div>
+        </div>
+    </div>
+    <br />
+    <br />
+      <div class="row "  >
+        <div class="col-md-4" >
+             <div class="serbox anim">
+            <img src="Images/largeb.jpg" />
+            <h2>Large Scale Enterprises</h2>
+            <p>
+               For large scale enterprises, create efficient marketing channels by adding Whisp at events to have have personalized marketing for your customers.  </p>
+            <p>
+                <a class="btn btn-default" href="#">Learn more &raquo;</a>
+            </p>
+                 </div>
+        </div>
+        <div class="col-md-4">
+             <div class="serbox anim">
+            <img src="Images/realtors.jpg" />
+            <h2>Realtors & Sales People</h2>
+            <p>
+For realtors and sales people, use a Whisp digital card to exchange information in person and start a 2-way SMS conversation with out any lead lag time.            </p>
+            <p>
+                <a class="btn btn-default" href="#">Learn more &raquo;</a>
+            </p>
+                 </div>
+        </div>
+        <div class="col-md-4">
+             <div class="serbox anim">
+            <img src="Images/resellers.jpg" />
+            <h2>Agencies and Resellers</h2>
+            <p>
+            Give your clients the option of adding lead-capturing tools through your technology, powering your business to be a market leader.  </p>
+            <p>
+                <a class="btn btn-default" href="#">Learn more &raquo;</a>
+            </p>
+                 </div>
+        </div>
+    </div>
+        </div>
+
+
+
+
+
+
+
+           
+            <hr />
+            <footer class="fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <img src="Images/Blue%20and%20Dark%20Blue%20Whisp%20Logo.png" style="width:300px;height:80px;" />
+                    
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h5 class="footh5" >Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+              <div class="col-md-2">
+                <h5 class="footh5" >Our Services</h5>
+                <ul class="footer-links">
+                    <li><a href="#">QR Codes</a></li>
+                    <li><a href="#">Social Links</a></li>
+                    <li><a href="#">Digital links</a></li>
+                  
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Connect with Us</h5>
+                <ul class="list-inline footer-social-icons">
+                    <li class="list-inline-item"><a href="#" class="fab fa-facebook"></a></li>
+                    <li class="list-inline-item"><a href="#" class="fab fa-twitter"></a></li>
+                    <li class="list-inline-item"><a href="#" class="fab fa-linkedin"></a></li>
+                    <li class="list-inline-item"><a href="#" class="fab fa-instagram"></a></li>
+                </ul>
+                <i class="fas fa-phone" style="color:royalblue;" ></i> &nbsp;+012323232323
+            </div>
+        </div>
+    </div>
+</footer>
+            <footer style="text-align:center;">
+                <p>&copy; <%: DateTime.Now.Year %> - Usman Ali</p>
+            </footer>
+        </div>
+
+    </form>
+
+    
+  
+<script>
+  // JavaScript for Banner Transitions
+    var currentSlide = 0;
+    var bannerItems = document.querySelectorAll('.banner-item');
+
+    function showSlide(index) {
+        for (var i = 0; i < bannerItems.length; i++) {
+            bannerItems[i].classList.remove('active');
+        }
+        bannerItems[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        bannerItems[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % bannerItems.length;
+        bannerItems[currentSlide].classList.add('active');
+    }
+
+    function prevSlide() {
+        bannerItems[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide - 1 + bannerItems.length) % bannerItems.length;
+        bannerItems[currentSlide].classList.add('active');
+    }
+
+    // Automatic Slide Change (Optional)
+    setInterval(function () {
+        nextSlide();
+    }, 5000); // Change slide every 5 seconds (adjust as needed)
+</script>
+</body>
+</html>
