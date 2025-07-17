@@ -33,7 +33,7 @@
     <img  class="hero-image" src="images/usman3.png" alt="Ali - Hero Image" />
   </div>
 </section>
-2<main class="container">
+<main class="container">
 
   <section id="about" class="fade-in">
     <h2><i class="fas fa-user"></i> About Me</h2>
@@ -120,59 +120,557 @@
   <h2><i class="fas fa-folder-open"></i> Projects</h2>
   <div class="projects-grid">
 
-    <div class="project-card">
-      <img src="images/project1.png" alt="Clinic Management System" />
+    <!-- Project Cards -->
+    <div class="project-card" onclick="openLightbox('clinic')">
+      <img src="images/project1.png" alt="Clinic System" class="project-thumb" />
       <h3><i class="fas fa-user-md"></i> Clinic Management System</h3>
-      <p>A desktop-based system developed in C#.NET for managing patient records, doctor scheduling, indoor admissions, and reports for Amina Altaf Bashir Clinic, Faisalabad.</p>
     </div>
 
-    <div class="project-card">
-      <img src="images/project2.png" alt="Medical Store POS" />
+    <div class="project-card" onclick="openLightbox('medical')">
+      <img src="images/project2.png" alt="Medical POS" class="project-thumb" />
       <h3><i class="fas fa-prescription-bottle-alt"></i> Medical Store POS</h3>
-      <p>A C#.NET billing and inventory solution for pharmacies. Features include customer invoicing, stock tracking, discounts, and purchase reports.</p>
     </div>
 
-    <div class="project-card">
-      <img src="images/project3.png" alt="Hosiery Billing System" />
+    <div class="project-card" onclick="openLightbox('hosry')">
+      <img src="images/project3.png" alt="Hosiery Billing" class="project-thumb" />
       <h3><i class="fas fa-store-alt"></i> Hosiery Billing System</h3>
-      <p>Custom billing software developed for Crown Hosiery & Wears. Handles purchases, sales, user roles, and accounting in a streamlined interface.</p>
+    </div>
+	<div class="project-card" onclick="openLightbox('printshop')">
+  <img src="images/printshop.jpg" alt="Printing Shop System" class="project-thumb" />
+  <h3><i class="fas fa-print"></i> Printing Shop Management System</h3>
+</div>
+<div class="project-card" onclick="openLightbox('plastic')">
+  <img src="images/amin.png" alt="Plastic Bottle Company Software" class="project-thumb" />
+  <h3><i class="fas fa-industry"></i> Plastic Bottle Company Software</h3>
+</div>
+
+
+    <div class="project-card" onclick="openLightbox('tailor')">
+      <img src="images/tailor.png" alt="Tailor System" class="project-thumb" />
+      <h3><i class="fas fa-scissors"></i> Tailor Management System</h3>
+    </div>
+	
+<div class="project-card" onclick="openLightbox('transport')">
+  <img src="images/transport1.png" alt="Transport Company System" class="project-thumb" />
+  <h3><i class="fas fa-truck-moving"></i> Transport Management System</h3>
+</div>
+<div class="project-card" onclick="openLightbox('rack')">
+  <img src="images/Rack.png" alt="Garments Shop POS - The Rack" class="project-thumb" />
+  <h3><i class="fas fa-tshirt"></i> Garments Shop POS - The Rack</h3>
+</div>
+
+<div class="project-card" onclick="openLightbox('weaving')">
+  <img src="images/weav.png" alt="Weaving Factory Management System" class="project-thumb" />
+  <h3><i class="fas fa-industry"></i> Weaving Factory Management System</h3>
+</div>
+
+
+
+
+    <div class="project-card" onclick="openLightbox('obe')">
+      <img src="images/obe-system.png" alt="OBE System" class="project-thumb" />
+      <h3><i class="fas fa-university"></i> University OBE System</h3>
+    </div>
+	
+
+    <div class="project-card" onclick="openLightbox('robot')">
+      <img src="images/robot-stamp.jpg" alt="Stamp Automation" class="project-thumb" />
+      <h3><i class="fas fa-industry"></i> Stamp Automation System</h3>
+    </div>
+	<div class="project-card" onclick="openLightbox('fax')">
+  <img src="images/fax-service.jpg" alt="Fax Service" class="project-thumb" />
+  <h3><i class="fas fa-file-alt"></i> Fax Sending System</h3>
+</div>
+
+<div class="project-card" onclick="openLightbox('stampdesigner')">
+  <img src="images/stamp-designer.jpg" alt="Stamp Designer" class="project-thumb" />
+  <h3><i class="fas fa-stamp"></i> Custom Stamp Designer</h3>
+</div>
+
+<div class="project-card" onclick="openLightbox('hkcheapest')">
+  <img src="images/freepost.jpg" alt="HK Cheapest Website" class="project-thumb" />
+  <h3><i class="fas fa-globe"></i> HKCheapest Real Estate Portal</h3>
+</div>
+
+
+
+    <div class="project-card" onclick="openLightbox('curtain')">
+      <img src="images/curtain_cleaner.jpg" alt="Curtain App" class="project-thumb" />
+      <h3><i class="fas fa-mobile-alt"></i> Curtain Cleaning App</h3>
     </div>
 
-<div class="project-card">
-  <img src="images/tailor.png" alt="Tailor Management System" />
-  <h3><i class="fas fa-scissors"></i> Tailor Management System</h3>
-  <p>A desktop-based solution built in C#.NET to manage tailor shop operations, including order tracking, customer measurements, delivery schedules, and payments.</p>
-</div>
-
-<div class="project-card">
-  <img src="images/curtain_cleaner.jpg" alt="Curtain Cleaning App" />
-  <h3><i class="fas fa-mobile-alt"></i> Curtain Cleaning App</h3>
-  <p>
-    Managed the development of a Flutter-based mobile app for a curtain cleaning business.
-    Designed intuitive UI, defined app architecture, and resolved critical bugs to ensure a smooth user experience. 
-    Features include service booking, status tracking, and notifications.
-  </p>
-</div>
-
-<div class="project-card">
-  <img src="images/laundry-app.jpg" alt="Laundry Service App" />
-  <h3><i class="fas fa-tshirt"></i> Laundry Service App</h3>
-  <p>
-    Led the UI/UX design and architecture planning for a Flutter-based laundry app. 
-    Played a key role in debugging, performance optimization, and feature planning.
-    The app allows users to schedule pickups, track orders, and receive automated updates.
-  </p>
-</div>
-
-
-
+    <div class="project-card" onclick="openLightbox('laundry')">
+      <img src="images/laundry-app.jpg" alt="Laundry App" class="project-thumb" />
+      <h3><i class="fas fa-tshirt"></i> Laundry Service App</h3>
+    </div>
 
   </div>
+
+  <!-- 🔍 Lightboxes -->
+  <!-- Format: projectId, title, images[], description -->
+  <div class="lightbox" id="clinic">
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('clinic')">&times;</span>
+      <img src="images/project1.png" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/project1.png" onclick="showImage('clinic','images/project1.png',this)" class="active">
+       
+		 <img src="images/clinic1.png" onclick="showImage('clinic','images/clinic1.png',this)">
+		
+		  <img src="images/indor.png" onclick="showImage('clinic','images/indor.png',this)">
+		    <img src="images/clinic2.png" onclick="showImage('clinic','images/clinic2.png',this)">
+       
+      </div>
+      <div class="lightbox-details">
+        <h3>Clinic Management System</h3>
+     <p>
+  A powerful desktop application built with <strong>C#.NET</strong> and backed by a <strong>SQL Server</strong> database, designed specifically for Amina Altaf Bashir Clinic in Faisalabad. 
+  This system streamlines clinical operations by:
+  <ul>
+    <li>Managing patient records, appointments, and indoor admissions</li>
+    <li>Scheduling doctors and maintaining medical history logs</li>
+    <li>Generating structured reports to support better administrative decisions</li>
+  </ul>
+</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="medical">
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('medical')">&times;</span>
+      <img src="images/project2.png" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/project2.png" onclick="showImage('medical','images/project2.png',this)" class="active">
+		  <img src="images/med1.png" onclick="showImage('medical','images/med1.png',this)" class="active">
+		    <img src="images/med2.png" onclick="showImage('medical','images/med2.png',this)" class="active">
+			  <img src="images/med4.png" onclick="showImage('medical','images/med4.png',this)" class="active">
+      </div>
+      <div class="lightbox-details">
+        <h3>Medical Store POS</h3>
+     <p>
+  A desktop-based Point of Sale (POS) and inventory management system designed specifically for pharmacies and medical stores. Built using <strong>C#.NET</strong> with a robust <strong>SQL Server</strong> backend, the application streamlines billing and stock operations while ensuring regulatory compliance and operational efficiency.
+  <ul>
+    <li>Enables real-time invoicing, returns, and discount handling</li>
+    <li>Tracks medicine batches, expiry dates, and supplier histories</li>
+    <li>Supports stock alerts, purchase reports, and multi-user access with role-based controls</li>
+  </ul>
+</p>
+ 
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="hosry">
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('hosry')">&times;</span>
+      <img src="images/project3.png" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/project3.png" onclick="showImage('hosry','images/project3.png',this)" class="active">
+		 <img src="images/crown.png" onclick="showImage('hosry','images/crown.png',this)" class="active">
+		 <img src="images/crown1.png" onclick="showImage('hosry','images/crown1.png',this)" class="active">
+		  <img src="images/crown2.png" onclick="showImage('hosry','images/crown2.png',this)" class="active">
+		 
+      </div>
+      <div class="lightbox-details">
+        <h3>Hosiery Billing System</h3>
+     <p>
+    A desktop-based billing and inventory system developed in C# with SQL Server for Crown Hosiery & Wears.  
+    Designed to optimize operations across multiple departments, the application includes:
+    <ul>
+      <li>Streamlined purchase and sales processing</li>
+      <li>Role-based user access control for staff and admins</li>
+      <li>Integrated financial tracking and reporting tools</li>
+    </ul>
+    This system significantly improved daily operations, reduced manual bookkeeping, and centralized essential business data into one efficient platform.
+  </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="printshop">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('printshop')">&times;</span>
+    
+    <img src="images/printshop.jpg" class="lightbox-main-img" />
+
+    <div class="lightbox-thumbs">
+      <img src="images/printshop.jpg" onclick="showImage('printshop', 'images/printshop.jpg', this)"  />
+	    <img src="images/printshop2.png" onclick="showImage('printshop', 'images/printshop2.png', this)"  />
+		  <img src="images/printshop3.png" onclick="showImage('printshop', 'images/printshop3.png', this)"  />
+		    <img src="images/printshop1.png" onclick="showImage('printshop', 'images/printshop1.png', this)"  />
+      <!-- Add more screenshots if available -->
+    </div>
+
+    <div class="lightbox-details">
+      <h3>Printing Shop Management System</h3>
+      <p>
+        A desktop application built in C# with SQL Server backend, designed specifically for a printing business dealing with visiting cards and invitation prints. The system streamlines day-to-day operations with features including:
+        <ul>
+          <li>Order intake and management</li>
+          <li>Billing and financial tracking</li>
+          <li>Customer and vendor record management</li>
+        </ul>
+        The solution enhanced operational efficiency, improved profit visibility, and centralized data for the shop’s business processes.
+      </p>
+    </div>
+  </div>
+</div>
+
+  
+  
+
+  <div class="lightbox" id="tailor">
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('tailor')">&times;</span>
+      <img src="images/tailor.png" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/tailor.png" onclick="showImage('tailor','images/tailor.png',this)" class="active">
+		  <img src="images/tailor1.png" onclick="showImage('tailor','images/tailor1.png',this)" class="active">
+		    <img src="images/tailor2.png" onclick="showImage('tailor','images/tailor2.png',this)" class="active">
+			 <img src="images/tailor3.png" onclick="showImage('tailor','images/tailor3.png',this)" class="active">
+      </div>
+      <div class="lightbox-details">
+        <h3>Tailor Management System</h3>
+  <p>
+  A customized desktop-based solution developed using <strong>C#.NET</strong> and backed by <strong>SQL Server</strong>, designed to streamline and digitize daily operations for tailor shops. The system offers a user-friendly interface to manage all aspects of order processing and customer management.
+  <ul>
+    <li>Tracks customer measurements, order history, and due dates</li>
+    <li>Manages order status from booking to delivery</li>
+    <li>Includes modules for payments and expenses</li>
+	<li>An attractive interface developed in urdu for better understanding and increased usability and user experience</li>
+  </ul>
+</p>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="plastic">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('plastic')">&times;</span>
+    <img src="images/amin.png" class="lightbox-main-img" alt="Plastic Main" />
+     <div class="lightbox-thumbs">
+      <img src="images/amin.png" onclick="showImage('plastic', 'images/amin.png', this)" class="active" />
+      <img src="images/amin2.png" onclick="showImage('plastic', 'images/amin2.png', this)" />
+      <img src="images/amin3.png" onclick="showImage('plastic', 'images/amin3.png', this)" />
+      <img src="images/amin4.png" onclick="showImage('plastic', 'images/amin4.png', this)" />
+    </div>
+    <div class="lightbox-details">
+      <h3>Plastic Bottle Company Software</h3>
+      <p>
+  Led the development of a <strong>C# desktop application with SQL Server backend</strong> tailored for a plastic bottle manufacturing company. The software was built to streamline operations and boost efficiency across departments.
+  <ul>
+    <li>Designed intuitive modules for item entry, invoicing, account management, and daybook tracking</li>
+    <li>Implemented reliable cash flow and inventory management features with real-time data access</li>
+    <li>Delivered a clean, user-friendly dual lingual (Urdu +English)  interface  that minimized training time and improved task speed</li>
+	
+  </ul>
+</p>
+
+    </div>
+
+   
+  </div>
+</div>
+
+  
+   
+	  <div class="lightbox" id="transport">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('transport')">&times;</span>
+
+    <img src="images/transport1.png" class="lightbox-main-img" />
+
+    <div class="lightbox-thumbs">
+      <img src="images/transport1.png" onclick="showImage('transport', 'images/transport1.png', this)" class="active" />
+      <img src="images/transport2.png" onclick="showImage('transport', 'images/transport2.png', this)" />
+      <img src="images/transport3.png" onclick="showImage('transport', 'images/transport3.png', this)" />
+	   <img src="images/transport4.png" onclick="showImage('transport', 'images/transport4.png', this)" />
+    </div>
+
+    <div class="lightbox-details">
+      <h3>Transport Management System</h3>
+     <p>
+  A comprehensive desktop application developed using <strong>C#.NET</strong> with a <strong>SQL Server</strong> database, tailored for a transportation and logistics company. 
+  The software offers a centralized platform to efficiently handle core operational processes:
+  <ul>
+    <li>Maintains detailed records of vehicles, routes, and dispatch schedules</li>
+    <li>Tracks expenses, driver salaries, and company financials</li>
+    <li>Improves operational visibility and decision-making with real-time data management</li>
+  </ul>
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="lightbox" id="rack">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('rack')">&times;</span>
+    <img src="images/Rack.png" class="lightbox-main-img" alt="Rack POS Main" />
+<div class="lightbox-thumbs">
+      <img src="images/Rack.png" onclick="showImage('rack', 'images/Rack.png', this)" class="active" />
+      <img src="images/rack1.png" onclick="showImage('rack', 'images/rack1.png', this)" />
+      <img src="images/rack2.png" onclick="showImage('rack', 'images/rack2.png', this)" />
+      <img src="images/rack4.png" onclick="showImage('rack', 'images/rack4.png', this)" />
+    </div>
+
+
+    <div class="lightbox-details">
+      <h3>Garments Shop POS - The Rack</h3>
+     <p>
+  Designed and developed a <strong>C# desktop application with SQL Server backend</strong> for a garments retail store. The system covers key business workflows such as inventory management, sales tracking, salary handling, and expense logging.
+  <ul>
+    <li>Integrated purchase, sales, and stock modules with real-time reporting</li>
+    <li>Built custom dashboards for managing employee salaries, daily expenses, and payments</li>
+    <li>Implemented user access control and detailed bill management features</li>
+  </ul>
+</p>
+    </div>
+
+    
+  </div>
+</div>
+
+  <div class="lightbox" id="weaving">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('weaving')">&times;</span>
+    <img src="images/weav.png" class="lightbox-main-img" alt="Weaving Factory Dashboard" />
+<div class="lightbox-thumbs">
+      <img src="images/weav.png" onclick="showImage('weaving', 'images/weav.png', this)" class="active" />
+      <img src="images/weav3.png" onclick="showImage('weaving', 'images/weav3.png', this)" />
+      <img src="images/weav2.png" onclick="showImage('weaving', 'images/weav2.png', this)" />
+      <img src="images/weav1.png" onclick="showImage('weaving', 'images/weav1.png', this)" />
+    </div>
+    <div class="lightbox-details">
+      <h3>Weaving Factory Management System</h3>
+     <p>
+  Designed and developed a <strong>C# desktop application with SQL Server backend</strong> for a weaving and thread manufacturing business. 
+  The system streamlines daily operations by managing threads, stock, purchases, sales, and complete financial tracking in one unified platform.
+  <ul>
+    <li>Centralized control panel for issuing thread, adding product stock, and managing company purchases and payments</li>
+    <li>Date-wise reports for sales, receivings, company balances, and ledgers with print/export functionality</li>
+    <li>Inventory monitoring including available stock reports for threads and products</li>
+    <li>User role-based access control, ensuring secure operations and restricted data access</li>
+    <li>Custom modules for calculating thread formulas, incomplete purchase orders, and tracking daily financial activities</li>
+  </ul>
+</p>
+
+    </div>
+
+    
+  </div>
+</div>
+
+  
+
+  <div class="lightbox" id="obe">
+  
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('obe')">&times;</span>
+      <img src="images/obe-system.png" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/obe-system.png" onclick="showImage('obe','images/obe-system.png',this)" class="active">
+		  <img src="images/assessment.png" onclick="showImage('obe','images/assessment.png',this)" >
+		    <img src="images/clos.png" onclick="showImage('obe','images/clos.png',this)" >
+			 <img src="images/clos2.png" onclick="showImage('obe','images/clos2.png',this)" >
+      </div>
+	  
+      <div class="lightbox-details">
+        <h3>University OBE System</h3>
+       <p>
+  Contributed to the development of a comprehensive <strong>web-based Outcome-Based Education (OBE)</strong> system for a university, designed to enhance academic accountability and program evaluation. The platform supports:
+  <ul>
+    <li>Dynamic CLO–PLO mapping and assessment analysis</li>
+    <li>Automated evaluation workflows for academic outcomes</li>
+    <li>Centralized reporting tools for accreditation and faculty review</li>
+  </ul>
+</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="robot">
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('robot')">&times;</span>
+      <img src="images/robot-stamp.jpg" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/robot-stamp.jpg" onclick="showImage('robot','images/robot-stamp.jpg',this)" class="active">
+		 <img src="images/robot1.jpg" onclick="showImage('robot','images/robot1.jpg',this)" class="active">
+		  <img src="images/robot2.jpg" onclick="showImage('robot','images/robot2.jpg',this)" class="active">
+		   <img src="images/robot3.jpg" onclick="showImage('robot','images/robot3.jpg',this)" class="active">
+      </div>
+      <div class="lightbox-details">
+        <h3>Stamp Automation System</h3>
+      <p>
+  Architected and developed an advanced <strong>automation system</strong> for a plastic stamp manufacturing unit, integrating <strong>C#.NET desktop software</strong>, <strong>Arduino-powered robotic arms</strong>, and <strong>SQL Server</strong> for centralized control. The system:
+  <ul>
+    <li>Automatically retrieves online orders and translates them into production tasks</li>
+    <li>Uses robotic arms for cutting, assembling, and packaging stamps without manual intervention</li>
+    <li>Includes safety protocols via relays and electronic switches to prevent faults and hazards</li>
+  </ul>
+</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="lightbox" id="fax">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('fax')">&times;</span>
+    <img src="images/fax-service.jpg" class="lightbox-main-img" />
+    <div class="lightbox-thumbs">
+      <img src="images/fax-service.jpg" onclick="showImage('fax','images/fax-service.jpg',this)" class="active">
+      <img src="images/fax1.jpg" onclick="showImage('fax','images/fax1.jpg',this)" >
+      <img src="images/fax2.jpg" onclick="showImage('fax','images/fax2.jpg',this)" >
+	  
+      <!-- You can add more like this:
+      <img src="images/fax-2.jpg" onclick="showImage('fax','images/fax-2.jpg',this)">
+      -->
+    </div>
+    <div class="lightbox-details">
+      <h3>Fax Sending System</h3>
+      <p>
+        A three-part system integrating web and desktop environments to automate fax delivery. The system includes:
+        <ul>
+          <li>A web-based platform for users to upload and submit faxes</li>
+          <li>A C#.NET desktop application that connects with a fax modem and handles transmission</li>
+          <li>A background service in C# that detects failed or spam-like faxes and clears them</li>
+        </ul>
+        All modules are synchronized using a centralized SQL database for robust communication and logging.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="lightbox" id="stampdesigner">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('stampdesigner')">&times;</span>
+    
+    <img src="images/stamp-designer.jpg" class="lightbox-main-img" />
+    
+    <div class="lightbox-thumbs">
+      <img src="images/stamp-designer.jpg" onclick="showImage('stampdesigner', 'images/stamp-designer.jpg', this)" class="active" />
+	    <img src="images/stamp1.jpg" onclick="showImage('stampdesigner', 'images/stamp1.jpg', this)">
+		  <img src="images/stamp2.jpg" onclick="showImage('stampdesigner', 'images/stamp2.jpg', this)">
+		    <img src="images/stamp3.jpg" onclick="showImage('stampdesigner', 'images/stamp3.jpg', this)">
+			
+	  
+      <!-- Add more thumbnails if needed -->
+      <!--
+      <img src="images/stamp-designer2.jpg" onclick="showImage('stampdesigner', 'images/stamp-designer2.jpg', this)">
+      -->
+    </div>
+
+    <div class="lightbox-details">
+      <h3>Custom Stamp Designer Platform</h3>
+      <p>
+        A fully interactive web platform that allows users to design their own plastic stamps before placing an order. Key features include:
+        <ul>
+          
+          <li>Multiple templates, fonts, icons, and layout controls</li>
+          <li>Order submission linked with automated stamp manufacturing system</li>
+          <li>Built using HTML5 Canvas, JavaScript, and a backend API (integrated with robotic manufacturing)</li>
+        </ul>
+        This project significantly reduced manual design approval time and improved the customer experience for customized stamp orders.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="lightbox" id="hkcheapest">
+  <div class="lightbox-content">
+    <span class="close" onclick="closeLightbox('hkcheapest')">&times;</span>
+    <img src="images/freepost.jpg" class="lightbox-main-img" alt="Main" />
+	<div class="lightbox-thumbs">
+      <img src="images/freepost15.jpg" onclick="showImage('hkcheapest', 'images/freepost15.jpg', this)" class="active" />
+	  <img src="images/freepost11.jpg" onclick="showImage('hkcheapest', 'images/freepost11.jpg', this)" />
+	  <img src="images/freepost12.jpg" onclick="showImage('hkcheapest', 'images/freepost12.jpg', this)"  />
+	   <img src="images/freepost14.jpg" onclick="showImage('hkcheapest', 'images/freepost14.jpg', this)"  />
+    </div>
+    <div class="lightbox-details">
+      <h3>HKCheapest Real Estate Portal</h3>
+	   
+      <p>
+        A real estate listing platform developed using <strong>ASP.NET</strong> and <strong>SQL Server</strong> for property advertisements and rentals in the Hong Kong region. 
+        The site allows users to browse property listings, post new rental offers, and manage their listings through a user-friendly dashboard.
+        <ul>
+          <li>Admin-controlled listing approval and moderation</li>
+          <li>Integrated SQL database for storing listing, pricing, and user details</li>
+          <li>Built with a focus on simplicity and fast property publishing</li>
+        </ul>
+      </p>
+    </div>
+   
+  </div>
+</div>
+
+
+
+  <div class="lightbox" id="curtain">
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('curtain')">&times;</span>
+      <img src="images/curtain_cleaner.jpg" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/curtain_cleaner.jpg" onclick="showImage('curtain','images/curtain_cleaner.jpg',this)" class="active">
+        <img src="images/curtain1.jpg" onclick="showImage('curtain','images/curtain1.jpg',this)" class="active">
+        <img src="images/curtain2.jpg" onclick="showImage('curtain','images/curtain2.jpg',this)" class="active">
+    
+
+
+	</div>
+      <div class="lightbox-details">
+        <h3>Curtain Cleaning App</h3>
+       <p>
+  Oversaw the design and development of a <strong>Flutter-based mobile application</strong> for a curtain cleaning business, with seamless <strong>user experience</strong> and a clean, modern interface. Key responsibilities and features included:
+  <ul>
+    <li>UI/UX design tailored for booking and order tracking</li>
+    <li>Defined scalable app architecture and component structure</li>
+    <li>Resolved core bugs and optimized performance for smoother operation</li>
+  </ul>
+</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="laundry">
+    <div class="lightbox-content">
+      <span class="close" onclick="closeLightbox('laundry')">&times;</span>
+      <img src="images/laundry-app.jpg" class="lightbox-main-img" />
+      <div class="lightbox-thumbs">
+        <img src="images/laundry-app.jpg" onclick="showImage('laundry','images/laundry-app.jpg',this)" class="active">
+		 <img src="images/laundry1.jpg" onclick="showImage('laundry','images/laundry1.jpg',this)" >
+		  <img src="images/laundry2.jpg" onclick="showImage('laundry','images/laundry2.jpg',this)">
+		
+		
+      </div>
+      <div class="lightbox-details">
+        <h3>Laundry Service App</h3>
+      <p>
+  Spearheaded the <strong>UI/UX design</strong> and architectural planning for a <strong>Flutter-based mobile app</strong> developed for a laundry service business. Key contributions and features included:
+  <ul>
+    <li>Designed intuitive user flows for scheduling pickups and tracking service status</li>
+    <li>Led debugging and performance optimization to ensure fast, stable app usage</li>
+    <li>Integrated automated order updates and user notifications for improved customer experience</li>
+  </ul>
+</p>
+
+      </div>
+    </div>
+  </div>
+
 </section>
 
 
-
-  </section>
+  
 
   <section id="services" class="fade-in">
   <h2><i class="fas fa-concierge-bell"></i> My Services</h2>
