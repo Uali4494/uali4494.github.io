@@ -114,9 +114,14 @@ section h2 {
 .about-content,
 .skills-grid,
 .projects-grid,
-.services-grid {
+ {
   display: grid;
   gap: 2rem;
+}
+.services-grid{
+	 display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 2rem; /* spacing between the cards */
 }
 
 .about-content {
@@ -291,6 +296,7 @@ margin:5px;
   overflow: hidden;
   transition: transform 0.3s;
 padding:20px;
+
 }
 
 
@@ -361,3 +367,54 @@ footer {
   display: block;
   margin: 0 auto 0.5rem;
 }
+
+/* Make service grid responsive */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* One column on tablets and below */
+  }
+
+  .project-card img.project-thumb {
+    height: 150px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .lightbox-content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .lightbox-main-img {
+    max-height: 250px;
+  }
+
+  .lightbox-thumbs img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
