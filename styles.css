@@ -29,17 +29,71 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: var(--primary);
-  color: #fff;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+/* header { */
+  /* background: var(--primary); */
+  /* color: #fff; */
+  /* padding: 1rem 2rem; */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 1000; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+/* } */
+
+/* Header layout */
+.header-content {
+	 z-index: 1000;
+
+	 background: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 20px;
+  /* background-color: var(--light-gray); */
+  position: sticky;
 }
+
+/* Nav links default (desktop) */
+.header-content nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background-color: var(--light-gray);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+/* This is the class JS toggles */
+.header-content nav.show {
+  display: flex;
+}
+
+.header-content nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--dark);
+  transition: color 0.3s;
+}
+
+.header-content nav a:hover {
+  color: var(--primary);
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile menu styles */
+
+
 
 header h1 {
   font-size: 1.5rem;
@@ -116,13 +170,14 @@ section h2 {
   color: var(--primary);
 }
 
-.about-content,
+
 .skills-grid,
 .projects-grid,
  {
   display: grid;
   gap: 2rem;
 }
+ 
 .services-grid{
 	 display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
@@ -130,6 +185,8 @@ section h2 {
 }
 
 .about-content {
+	 display: grid;
+  gap: 2rem;
   grid-template-columns: 1fr 2fr;
   align-items: left;
 /*padding:20px;
@@ -349,6 +406,7 @@ footer {
 }
 
 .about-list li {
+	
   background: var(--light-gray);
   padding: 1rem 1.5rem;
   border-radius: 10px;
@@ -438,7 +496,32 @@ footer {
     right: 10px;
     font-size: 1.5rem;
   }
-  
+   .hamburger {
+    display: block;
+  }
+
+  .header-content nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--light-gray);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding: 10px 0;
+  }
+
+  .header-content nav a {
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+  }
+
+  /* Show dropdown menu when active */
+  .header-content nav.show {
+    display: flex;
+  }
 }
 
 @media (max-width: 480px) {
