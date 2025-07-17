@@ -285,12 +285,13 @@ padding :10px
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
   padding: 1rem;
   overflow-y: auto;
+  
   box-sizing: border-box;
 }
 
