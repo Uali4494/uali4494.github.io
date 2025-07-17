@@ -29,16 +29,8 @@ window.addEventListener("load", () => {
 
 
 
-const imageSets = {
-  robot: ["images/robot1.jpg", "images/robot2.jpg", "images/robot3.jpg"],
-  curtain: ["images/curtain1.jpg", "images/curtain2.jpg"]
-};
 
-let currentIndex = {
-  robot: 0,
-  curtain: 0
-};
-
+const appearOptions = { threshold: 0.3 };
 
 function openLightbox(id) {
   document.getElementById(id).style.display = 'flex';
