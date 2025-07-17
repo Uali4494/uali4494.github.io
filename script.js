@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
 
 
 
-const appearOptions = { threshold: 0.3 };
+
 
 function openLightbox(id) {
   document.getElementById(id).style.display = 'flex';
@@ -52,14 +52,3 @@ function showImage(containerId, imgSrc, thumb) {
 
 
 
-function nextImage(key) {
-  currentIndex[key]++;
-  if (currentIndex[key] >= imageSets[key].length) currentIndex[key] = 0;
-  document.getElementById(`${key}-image`).src = imageSets[key][currentIndex[key]];
-}
-
-function prevImage(key) {
-  currentIndex[key]--;
-  if (currentIndex[key] < 0) currentIndex[key] = imageSets[key].length - 1;
-  document.getElementById(`${key}-image`).src = imageSets[key][currentIndex[key]];
-}
