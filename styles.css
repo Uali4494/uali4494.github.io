@@ -15,6 +15,11 @@
   /*--light-gray: #F9FAFB;*/
 --light-gray: white;
 }
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -147,7 +152,9 @@ border-radius: 10px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   text-align: center;
 }
-
+.skill{
+	display:grid;
+}
 .skill i {
   font-size: 2rem;
   color: var(--primary);
@@ -215,7 +222,7 @@ padding :10px
 
 /* Lightbox Styling */
 .lightbox {
-  display: none;
+  display: none !important; 
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -388,6 +395,12 @@ footer {
     max-width: 300px;
     margin: auto;
   }
+  .skills-grid {
+	   display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 1rem; /* spacing between items */
+  padding: 1rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -416,5 +429,11 @@ footer {
     width: 50px;
     height: 50px;
   }
+  .skills-grid {
+	     display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 1rem; /* spacing between items */
+  padding: 1rem;
+}
 }
 

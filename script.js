@@ -16,6 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ✅ Fallback for mobile — make visible if already in viewport
+window.addEventListener("load", () => {
+  const faders = document.querySelectorAll(".fade-in");
+  faders.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      el.classList.add("visible");
+    }
+  });
+});
+
+
 
 const imageSets = {
   robot: ["images/robot1.jpg", "images/robot2.jpg", "images/robot3.jpg"],
