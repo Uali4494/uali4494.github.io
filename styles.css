@@ -42,54 +42,56 @@ body {
 /* } */
 
 /* Header layout */
+/* Header layout */
 .header-content {
-	 z-index: 1000;
-
-	 background: var(--primary);
+	 top: 0; 
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  /* background-color: var(--light-gray); */
-  position: sticky;
+  padding: 2rem 1rem;
+  background: var(--primary);
+  color: black;
+  flex-wrap: wrap;
+  position:sticky;
 }
 
-/* Nav links default (desktop) */
-.header-content nav {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  background-color: var(--light-gray);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1000;
-  padding: 10px 0;
+.header-content h1 {
+  font-size: 2rem;
+  margin: 0;
 }
 
-/* This is the class JS toggles */
-.header-content nav.show {
+/* Navbar links */
+nav {
   display: flex;
+  gap: 1rem;
+
 }
 
-.header-content nav a {
+nav a {
+  color: black;
   text-decoration: none;
-  font-weight: 600;
-  color: var(--dark);
+  font-weight: 800;
+ 
+  text-decoration: none;
+  margin-left: 1.5rem;
   transition: color 0.3s;
 }
 
-.header-content nav a:hover {
-  color: var(--primary);
-}
-
-/* Hamburger icon */
-.hamburger {
+.menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* Mobile styles */
+
+
+.header-content nav a:hover {
+  color: yellow;
+}
+
+
 
 /* Mobile menu styles */
 
@@ -99,16 +101,7 @@ header h1 {
   font-size: 1.5rem;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  transition: color 0.3s;
-}
 
-nav a:hover {
-  color: var(--accent);
-}
 
 #hero {
   display: flex;
@@ -441,6 +434,29 @@ footer {
 
 /* Make service grid responsive */
 @media (max-width: 768px) {
+	
+	nav{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+	 position: absolute;
+    top: 60px; /* adjust based on header height */
+    right: 0;
+    width: 100%;
+    z-index: 9999
+  }
+
+  nav.show{ 
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+	
+	
+	
   .services-grid {
     grid-template-columns: 1fr; /* One column on tablets and below */
   }
@@ -499,35 +515,49 @@ footer {
     right: 10px;
     font-size: 1.5rem;
   }
-   .hamburger {
-    display: block;
-  }
+  
 
-  .header-content nav {
+  /* .header-content nav { */
+    /* display: none; */
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* top: 100%; */
+    /* right: 0; */
+    /* width: 100%; */
+    /* background-color: var(--light-gray); */
+    /* box-shadow: 0 8px 16px rgba(0,0,0,0.2); */
+    /* z-index: 1000; */
+    /* padding: 10px 0; */
+  /* } */
+
+  /* .header-content nav a { */
+    /* padding: 10px 20px; */
+    /* border-top: 1px solid #ddd; */
+  /* } */
+
+  Show dropdown menu when active
+  /* .header-content nav.show { */
+    /* display: flex; */
+  /* } */
+}
+@media (max-width: 480px) {
+	
+    nav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
     width: 100%;
-    background-color: var(--light-gray);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1000;
-    padding: 10px 0;
+    margin-top: 1rem;
   }
 
-  .header-content nav a {
-    padding: 10px 20px;
-    border-top: 1px solid #ddd;
-  }
-
-  /* Show dropdown menu when active */
-  .header-content nav.show {
+  nav.show {
     display: flex;
   }
-}
 
-@media (max-width: 480px) {
+  .menu-toggle {
+    display: block;
+  }
+	
+	
   .hero-content h2 {
     font-size: 1.8rem;
   }

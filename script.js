@@ -50,5 +50,18 @@ function showImage(containerId, imgSrc, thumb) {
 
 
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", () => {
+		
+      navbar.classList.toggle("show");
+	  console.log("Menu toggled");
+    });
+  });
+  
+
+
 
 
