@@ -51,7 +51,7 @@ body {
   align-items: center;
   padding: 2rem 1rem;
   background: var(--primary);
-  color: black;
+  color: white;
   flex-wrap: wrap;
   position:sticky;
 }
@@ -69,7 +69,7 @@ nav {
 }
 
 nav a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: 800;
  
@@ -280,10 +280,10 @@ padding :10px
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height:100vh ;
   background: rgba(0, 0, 0, 0.85);
   justify-content: center;
-  /* align-items: center; */
+  align-items: flex-start;
   padding: 1rem;
   overflow-y: auto;
   
@@ -299,7 +299,7 @@ padding :10px
   position: relative;
   text-align: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .lightbox .close {
@@ -438,18 +438,27 @@ footer {
 	nav{
     display: none;
     flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
+ 
+    margin-top: 2rem;
 	 position: absolute;
     top: 60px; /* adjust based on header height */
     right: 0;
     width: 100%;
-    z-index: 9999
+    z-index: 9999;
+	background:var(--primary);
+	 padding: 10px 0;
+	  /* margin-top:50px; */
   }
 
   nav.show{ 
+ 
     display: flex;
   }
+  nav a{
+	  width:90%;
+	border-bottom:1px solid white;
+	
+}	
 
   .menu-toggle {
     display: block;
@@ -547,6 +556,7 @@ footer {
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
+	background:var(--primary);
   }
 
   nav.show {
@@ -556,7 +566,10 @@ footer {
   .menu-toggle {
     display: block;
   }
+nav a{
+	border-bottom:1px solid white;
 	
+}	
 	
   .hero-content h2 {
     font-size: 1.8rem;

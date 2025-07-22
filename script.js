@@ -14,6 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
+  
+  
+   const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", () => {
+		
+      navbar.classList.toggle("show");
+	  navbar.style.display = navbar.classList.contains("show") ? "flex" : "none";
+	 console.log( navbar.classList);
+    });
+  
+  
+  
 });
 
 // ✅ Fallback for mobile — make visible if already in viewport
@@ -50,16 +64,6 @@ function showImage(containerId, imgSrc, thumb) {
 
 
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar");
-
-    menuToggle.addEventListener("click", () => {
-		
-      navbar.classList.toggle("show");
-	  console.log("Menu toggled");
-    });
-  });
   
 
 
