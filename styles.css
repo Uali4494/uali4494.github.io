@@ -455,7 +455,7 @@ footer {
     display: flex;
   }
   nav a{
-	  width:90%;
+	  width:85%;
 	border-bottom:1px solid white;
 	
 }	
@@ -567,6 +567,7 @@ footer {
     display: block;
   }
 nav a{
+	
 	border-bottom:1px solid white;
 	
 }	
